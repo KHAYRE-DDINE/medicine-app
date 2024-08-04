@@ -1,0 +1,69 @@
+.services-boxes {
+    padding: 50px 0;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.services-boxes .service {
+    box-shadow: 0 0 20px #ccc;
+    border-radius: 18px;
+    padding: 0;
+    background-color: white;
+}
+
+.services-boxes .service .icon {
+    background: url('../../images/service-box.png');
+    background-size: cover;
+    padding: 46px 0px 17px;
+
+}
+
+.services-boxes .service .icon i {
+    border: 1px solid #ccc;
+    font-size: 69px;
+    margin: auto;
+    padding: 9px 26px;
+    margin-left: 27px;
+    background-color: white;
+}
+
+.services-boxes .service h2 {
+    color: var(--main-color);
+}
+
+.services-boxes .service p {
+    font-size: 16.5px;
+    color: #646363;
+}
+
+.services-boxes .service a {
+    color: var(--second-main-color);
+    padding: 13px 34px;
+    background-color: #a6a9e699;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+.services-boxes .service:hover a {
+    transition: .3s ease-in-out;
+    background-color: var(--second-main-color);
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .services-boxes .service {
+        width: 30.333333%;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-boxes .service {
+        width: 45.333333%;
+    }
+}
+
+@media (max-width: 680px) {
+    .services-boxes .service {
+        width: 90.333333%;
+    }
+}

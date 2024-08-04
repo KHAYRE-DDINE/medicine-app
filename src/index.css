@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --main-color: #1f2278;
+    --second-main-color: #565acf;
+    --text-color: #1f2278;
+    --secondary-color: #f17732;
+    --color: #838386;
+    --main-background: #f7f7ff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+
+<img className="lines" src= {
+    linesShape
+}
+
+alt="linesShape" />
+
+//////////
+<img className="plus" src= {
+    plusShape
+}
+
+alt="plusShape" />
+//////////
+
+<img className="circle"
+
+src= {
+    circularShape
+}
+
+alt="circularShape"
+/>
+*/
+body {
+    background-color: #f7f7ff;
+}
+
+.middle-section {
+    background: url('./images/wrapper-top.jpg');
+    padding-top: 100px;
+    min-height: 500px;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.background {
+    background-color: var(--main-background);
+    padding: 0px 52px 40px;
+}
+
+img.circle,
+img.plus,
+img.lines,
+.subscribe .lines {
+    position: absolute;
+}
+
+img.circle {
+    width: 80px;
+    left: 10px;
+    animation: 4s circle infinite;
+}
+
+img.lines {
+    width: 100px;
+    top: -26px;
+    animation: 4s line ease-in infinite;
+}
+
+img.plus {
+    width: 80px;
+    right: 19px;
+    top: 54px;
+    animation: 4s plus ease-in infinite;
+}
+
+@keyframes circle {
+    from {
+        top: 5px;
+    }
+
+    25% {
+        top: 8px;
+    }
+
+    50% {
+        top: 14px;
+    }
+
+    75% {
+        top: 8px;
+    }
+
+    to {
+        top: 5px;
+    }
+}
+
+@keyframes plus {
+    from {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes line {
+    from {
+        left: 54px;
+    }
+
+    25% {
+        left: 58px;
+    }
+
+    50% {
+        left: 64px;
+    }
+
+    75% {
+        left: 58px;
+    }
+
+    to {
+        left: 54px;
+    }
 }

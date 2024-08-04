@@ -1,0 +1,113 @@
+.our-jobs {
+    background-image: url('../../images/line bg.png');
+    background-size: cover;
+    margin: 40px 0;
+}
+
+.our-jobs .small-title {
+    font-weight: 700;
+}
+
+
+.jobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 59px 0;
+    background-color: white;
+}
+
+.jobs .job {
+    border: 2px solid #83838647;
+    padding: 20px;
+    border-radius: 10px;
+    width: 322px;
+    cursor: pointer;
+}
+
+.jobs .job:hover {
+    border: none;
+    transition: .3s;
+    box-shadow: 0 0 18px 0 #89898947;
+}
+
+.jobs .job .image {
+    width: 275px;
+}
+
+.jobs .job .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+}
+
+.jobs .job .information {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.jobs .job .information img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.jobs .job .information .name {
+    font-size: 16px;
+    margin: 0 12px;
+}
+
+
+.jobs .job .information .date i {
+    margin-right: 8px;
+}
+
+.jobs .job a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.jobs .job a h1 {
+    font-size: 24px;
+    margin: 15px 0px;
+    padding: 5px 5px 5px 0;
+    color: var(--main-color);
+}
+
+.jobs .job a:last-of-type {
+    display: flex;
+    border: 2px solid var(--second-main-color);
+    width: 165px;
+    height: 46px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--second-main-color);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 4px 0 22px;
+}
+
+.jobs .job a:hover {
+    transition: .9s;
+    background-color: var(--second-main-color);
+    color: white;
+}
+
+.jobs .job a:last-of-type i {
+    background-color: var(--second-main-color);
+    color: white;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}

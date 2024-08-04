@@ -1,0 +1,41 @@
+.landing-page-contact-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+
+.landing-page-contact-top .title h1 {
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 66px;
+    letter-spacing: 2px;
+}
+
+.landing-page-contact-top .box {
+    color: #fff;
+    background-color: #565acf;
+    border-radius: 10px;
+    padding: 10px 12px;
+    min-width: 239px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 20px 0;
+    font-size: 17px;
+    letter-spacing: .7px;
+}
+
+.landing-page-contact-top .box a {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px 0 0;
+}
+
+.landing-page-contact-top .box a i {
+    margin-right: 7px;
+    font-size: 20px;
+}
