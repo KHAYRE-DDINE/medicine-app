@@ -6,6 +6,7 @@ import Testimonials from "../../Testimonials/Testimonials";
 import AboutInfo from "../../AboutInfo/AboutInfo";
 import Booking from "../Booking/Booking";
 import Doctors4 from "../../../images/doctor-784329_1280.png";
+import Doctors from "../../../images/doctors.png";
 import teleBook from "../../../images/tele-book.png";
 import check from "../../../images/check.png";
 import location from "../../../images/location.png";
@@ -36,7 +37,36 @@ function Home() {
     id === 0 ? setId(1) : setId(0);
     console.log(id);
   };
-
+  const [info, setInfo] = useState([
+    {
+      image: Doctors,
+      name: "john deo",
+      date: "17 april 2016",
+      purpose: "in this hospital there are special surgeon",
+      button: "Contact us",
+    },
+    {
+      image: Doctors,
+      name: "john deo",
+      date: "17 april 2016",
+      purpose: "in this hospital there are special surgeon",
+      button: "Contact us",
+    },
+    {
+      image: Doctors,
+      name: "john deo",
+      date: "17 april 2016",
+      purpose: "in this hospital there are special surgeon",
+      button: "Contact us",
+    },
+    {
+      image: Doctors,
+      name: "john deo",
+      date: "17 april 2016",
+      purpose: "in this hospital there are special surgeon",
+      button: "Contact us",
+    },
+  ]);
   return (
     <div className="home">
       <div className="top-section">
@@ -120,7 +150,7 @@ function Home() {
         </div>
       </div>
       <Testimonials />
-      <Latest />
+      <Latest info={info} />
     </div>
   );
 }

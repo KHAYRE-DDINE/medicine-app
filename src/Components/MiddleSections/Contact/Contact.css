@@ -200,6 +200,10 @@
     background-color: #ffbdbc;
 }
 
+.contact-boxes .box:nth-of-type(2) p {
+    text-transform: lowercase;
+}
+
 .contact-boxes .box:last-of-type .icon::before {
     background-color: #a4fcc4;
 }

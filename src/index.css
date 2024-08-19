@@ -37,12 +37,12 @@ body {
 }
 
 .middle-section {
-    background: url('./images/wrapper-top.jpg');
     padding-top: 100px;
     min-height: 500px;
-    background-size: cover;
     width: 100%;
-
+    background: url('./images/wrapper-top.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .background {

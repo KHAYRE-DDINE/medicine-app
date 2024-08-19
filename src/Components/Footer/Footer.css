@@ -2,7 +2,7 @@
     position: absolute;
     /* bottom: 0; */
     width: 100%;
-    min-height: 400px;
+    /* min-height: 400px; */
     background-image: url('../../images/footer-background.avif');
     background-size: cover;
     padding: 38px 44px 0;
@@ -26,8 +26,10 @@
 
 .footer .footer-top {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(251px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 20px;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .footer .summary {
@@ -169,8 +171,10 @@
     color: #1DA1F2
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .footer .quick-links {
         padding-left: 0;
     }
+
+
 }

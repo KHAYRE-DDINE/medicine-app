@@ -2,8 +2,6 @@ a {
     text-decoration: none;
 }
 
-.home {}
-
 .home .top-section {
     padding: 141px 20px;
     display: flex;
@@ -421,6 +419,11 @@ a {
     margin-bottom: 23px;
 }
 
+.services .info .btn a {
+    color: white;
+    text-transform: capitalize;
+}
+
 .services .info .big-title {
     font-size: 38px;
 }
@@ -438,6 +441,8 @@ a {
 .services .boxes .services-boxes {
     background: #3b3a3a0a;
     padding: 16px 0 16px 18px;
+    flex-wrap: nowrap;
+    cursor: grab;
 }
 
 .services .boxes::before {

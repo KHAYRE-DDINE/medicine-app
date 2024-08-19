@@ -39,9 +39,6 @@ const Faq = () => {
   ]);
 
   const [id, setId] = useState(false);
-  // const [height, setHeight] = useState("58px");
-  // const [background, setBackground] = useState("var(--second-main-color)");
-  console.log(id);
   const show = (idx) => {
     let btn = document.querySelectorAll(".faq .question");
     faqs.map((el) => {
