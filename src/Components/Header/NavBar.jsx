@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../images/nav-bar-logo.png";
 import Icons from "../socialMedia/socialMediaLinks";
+import { IoSearchOutline } from "react-icons/io5";
 
 function NavBar() {
   let burger = document.querySelector(".burger");
   let sideNavbar = document.querySelector(".side-navbar");
+  const [showSearchPopUp, setShowSearchPopUp] = useState(false);
+  const refForm = useRef();
+  const refBack = useRef();
   const [click, setClick] = useState();
   let changePlusToMins = (e) => {
     let iconClass = "bi bi-";
@@ -37,7 +41,13 @@ function NavBar() {
       sideNavbar.classList.remove("show");
     }
   };
+  window.onclick = (e) => {
+    if (e.target === refBack.current || e.target === refForm.current) {
+      setShowSearchPopUp(false);
+    }
+  };
   showHideNavbar();
+
   return (
     <div className="navbar-header">
       <div className="navbar-logo">
@@ -86,7 +96,7 @@ function NavBar() {
             </ul>
           </li>
           <li className="search">
-            <NavLink to="/Search">
+            <NavLink to="#" onClick={() => setShowSearchPopUp(true)}>
               <i className="bi bi-search"></i>
             </NavLink>
           </li>
@@ -143,14 +153,17 @@ function NavBar() {
         </div>
         <Icons />
       </div>
-      <div className="search-page">
-        <div className="back"></div>
-        <form action="">
-          <fieldset>
-            <input type="text" placeholder="Type to search" />
-          </fieldset>
-        </form>
-      </div>
+      {showSearchPopUp && (
+        <div className="search-page">
+          <div className="back" ref={refBack}></div>
+          <form action="" ref={refForm}>
+            <fieldset>
+              <input type="text" placeholder="Type to search" />
+              <IoSearchOutline />
+            </fieldset>
+          </form>
+        </div>
+      )}
     </div>
   );
 }

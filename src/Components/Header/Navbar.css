@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     top: 0;
+    left: 0;
 }
 
 .search-page .back {
@@ -17,11 +18,35 @@
     z-index: -1;
 }
 
-.search-page form {}
+.search-page form {
+    width: 100%;
+}
 
-.search-page form fieldset {}
+.search-page form fieldset {
+    display: flex;
+    width: max-content;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
 
-.search-page form fieldset input {}
+.search-page form fieldset input {
+    border: none;
+    border-bottom: 2px solid #353535;
+    padding: 10px 11px;
+    background-color: transparent;
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.search-page form fieldset svg {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
 
 .navbar-header {
     display: flex;
