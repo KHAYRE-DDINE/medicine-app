@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, {  useState } from "react";
 import "./Blog.css";
 import TopSection from "../../TopSection/TopSection";
 import LatestNews from "../../LatestNews/LatestNews";

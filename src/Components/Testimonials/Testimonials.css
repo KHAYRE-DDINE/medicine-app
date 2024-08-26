@@ -103,6 +103,7 @@
     font-weight: 400;
     font-style: italic;
     line-height: 28px;
+    width: 80%;
 }
 
 .testimonial .members .opinions .box h3 {
@@ -119,6 +120,7 @@
 
 .testimonial .members .buttons {
     margin: 13px 34px;
+    display: flex;
 }
 
 .testimonial .members .buttons .btn {
@@ -129,6 +131,9 @@
     height: 45px;
     margin-right: 20px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial .members .opinions .btn:hover {

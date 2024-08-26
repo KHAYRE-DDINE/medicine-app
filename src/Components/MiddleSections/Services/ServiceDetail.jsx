@@ -79,6 +79,7 @@ function ServiceDetail() {
     <div className="middle-section">
       <TopSection sectionTitle="Service Details" />
       <div className="background">
+      </div>
         <div className="main-content">
           <div className="left">
             <div className="image">
@@ -201,7 +202,6 @@ function ServiceDetail() {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }
