@@ -84,7 +84,7 @@ li:not(li:first-of-type, .navbar-list .list li:last-of-type, li.search):hover i 
 }
 
 .navbar-list .list li:last-of-type i {
-    color: var(--main-color);
+    color: var(--second-main-color);
     background-color: white;
     border-radius: 5px;
     display: flex;

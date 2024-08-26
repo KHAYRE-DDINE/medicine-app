@@ -105,14 +105,20 @@
 }
 
 /***************************************Right Side*******************************************/
-.right {}
+.blog-details .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
 
-.right .search-box {
+.blog-details .right .search-box {
     width: 100%;
     position: relative;
 }
 
-.right .search-box input {
+.blog-details .right .search-box input {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -121,7 +127,7 @@
     border-bottom: 3px solid var(--second-main-color);
 }
 
-.right .search-box .search-icon {
+.blog-details .right .search-box .search-icon {
     width: 50px;
     height: 50px;
     background-color: var(--secondary-color);
@@ -129,6 +135,35 @@
     position: absolute;
     right: 17px;
     top: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.main-content .right .wrapper {
+    margin-top: 0 !important;
+}
+
+.main-content .right .wrapper .title h1 {
+    font-size: 23px;
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-weight: 600;
+    padding-bottom: 15px;
+    position: relative;
+    border: none !important;
+}
+
+.main-content .right .wrapper .title h1::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: -4px !important;
+    height: 6px !important;
+    width: 80px !important;
+    background: url('../../../images/download.png') !important;
+    background-color: transparent !important;
 }
 
 .main-content .right .wrapper .list {
@@ -147,4 +182,57 @@
 .main-content .right .wrapper .images img {
     width: 80px;
     height: 80px;
+}
+
+.main-content .right .wrapper .list-of-posts {
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-content .right .wrapper .list-of-posts .post {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-content .right .wrapper .list-of-posts .post .image {}
+
+.main-content .right .wrapper .list-of-posts .post .image img {
+    width: 89px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main-content .right .wrapper .list-of-posts .post .info {}
+
+.main-content .right .wrapper .list-of-posts .post .info .title {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.main-content .right .wrapper .list-of-posts .post .info .date {}
+
+.main-content .right .wrapper .list-of-posts .post .info .date span {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 5px;
+}
+
+.main-content .right .wrapper .images {}
+
+.main-content .right .wrapper .images img {
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.main-content .right .wrapper .images img:hover {
+    opacity: .6;
 }

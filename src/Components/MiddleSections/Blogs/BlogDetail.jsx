@@ -3,8 +3,17 @@ import TopSection from "../../TopSection/TopSection";
 import doctor from "../../../images/doctors.png";
 import doctors2 from "../../../images/doctors2.png";
 import doctors3 from "../../../images/doctors3.png";
-import doctors4 from "../../../images/doctors4.png";
+import doctors4 from "../../../images/doctors3.png";
+import doctors5 from "../../../images/doctors3.png";
+import doctors6 from "../../../images/doctors3.png";
+import doctors7 from "../../../images/doctors3.png";
+import doctors8 from "../../../images/doctors3.png";
+import doctors9 from "../../../images/doctors3.png";
+import doctors10 from "../../../images/doctors3.png";
+import doctors11 from "../../../images/doctors4.png";
 import "./BlogDetail.css";
+import { FaSearch } from "react-icons/fa";
+import { MdOutlineDateRange } from "react-icons/md";
 
 function BlogDetail() {
   return (
@@ -23,7 +32,9 @@ function BlogDetail() {
                   <h4 className="name">Sonar Moyna</h4>
                 </div>
                 <div className="date">
-                  <span> 19 July 2021</span>
+                  <span>
+                    <MdOutlineDateRange /> 19 July 2021
+                  </span>
                 </div>
               </div>
             </div>
@@ -79,21 +90,60 @@ function BlogDetail() {
           <div className="right">
             <div className="search-box">
               <input type="search" placeholder="Enter your keywords..." />
-              <div className="search-icon"></div>
+              <div className="search-icon">
+                <FaSearch />
+              </div>
             </div>
             <div className="wrapper">
               <div className="title">
                 <h1>recent posts</h1>
               </div>
-              <div className="list">
-                <li>
-                  <div className="icon"></div>
-                  Download our brochures
-                </li>
-                <li>
-                  <div className="icon"></div>
-                  Our company details
-                </li>
+              <div className="list-of-posts">
+                <div className="post ">
+                  <div className="image">
+                    <img src={doctors3} alt="doctors3" />
+                  </div>
+                  <div className="info">
+                    <h1 className="title ">
+                      Precious Tips To Help You Get Better.
+                    </h1>
+                    <div className="date ">
+                      <span className="">
+                        <MdOutlineDateRange /> 19 July 2021
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="post ">
+                  <div className="image">
+                    <img src={doctors8} alt="doctors3" />
+                  </div>
+                  <div className="info">
+                    <h1 className="title ">
+                      Precious Tips To Help You Get Better.
+                    </h1>
+                    <div className="date ">
+                      <span className="">
+                        <MdOutlineDateRange /> 19 July 2021
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="post ">
+                  <div className="image">
+                    <img src={doctors6} alt="doctors3" />
+                  </div>
+                  <div className="info">
+                    <h1 className="title ">
+                      Precious Tips To Help You Get Better.
+                    </h1>
+                    <div className="date ">
+                      <span className="">
+                        <MdOutlineDateRange /> 19 July 2021
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="wrapper">
