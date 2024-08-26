@@ -143,6 +143,14 @@ function NavBar() {
         </div>
         <Icons />
       </div>
+      <div className="search-page">
+        <div className="back"></div>
+        <form action="">
+          <fieldset>
+            <input type="text" placeholder="Type to search" />
+          </fieldset>
+        </form>
+      </div>
     </div>
   );
 }

@@ -12,7 +12,6 @@ import Register from "./LoginRegister/Register";
 import Service from "./Services/Service";
 import ServiceDetail from "./Services/ServiceDetail";
 import Contact from "./Contact/Contact";
-import Search from "./Search/Search";
 import Blog from "./Blogs/Blog";
 import BlogDetail from "./Blogs/BlogDetail";
 
@@ -35,7 +34,6 @@ function MiddleSections() {
         <Route path="/ServiceDetail" element={<ServiceDetail />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/BlogDetail" element={<BlogDetail />} />
-        <Route path="/Search" element={<Search />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
