@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import './MiddleSections.css'
 import Home from "./Home/Home";
 import About from "./About/About";
 import Team from "./Team/Team";

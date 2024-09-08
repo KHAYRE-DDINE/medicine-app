@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./TopSection.css";
+import circle from "../../images/circular shape.png";
+import plus from "../../images/plus shape.png";
+
 function TopSection({ sectionTitle }) {
   return (
     <div className="landing-page-contact-top">

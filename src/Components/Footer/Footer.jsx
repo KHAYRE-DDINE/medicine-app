@@ -68,7 +68,7 @@ class Footer extends Component {
         <img className="plus" src={plusShape} alt="plusShape" />
         <div className="footer-bottom">
           <p>
-            Copyright © 2023 Design & Developed by
+            Copyright © 2024 Design & Developed by
             <strong> Khayreddine Aharrar</strong>
           </p>
         </div>

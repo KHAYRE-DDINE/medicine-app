@@ -292,9 +292,10 @@ a {
 /*********************Booking***********************************/
 
 .booking {
+    height: 100vh;
     background-color: #f5f5fc;
     border-radius: 30px;
-    margin: 0 20px;
+    margin: 20px 0 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,7 +407,7 @@ a {
 /*********************Services***********************************/
 .services {
     overflow: hidden;
-    padding: 50px 0;
+    padding: 0;
 }
 
 .services .info {
@@ -436,6 +437,7 @@ a {
 
 .services .boxes {
     position: relative;
+    overflow: hidden;
 }
 
 .services .boxes .services-boxes {
@@ -443,6 +445,8 @@ a {
     padding: 16px 0 16px 18px;
     flex-wrap: nowrap;
     cursor: grab;
+    position: relative;
+    left: 450px;
 }
 
 .services .boxes::before {

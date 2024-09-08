@@ -25,7 +25,7 @@ class LoginRegister extends Component {
               placeholder="Password"
             />
             <input type="submit" value="submit" />
-            <p>already have an account?</p>
+            <p>Already have an account?</p>
             <Link to="/LoginRegister">login</Link>
           </form>
         </div>

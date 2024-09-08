@@ -8,7 +8,7 @@ class Error extends Component {
     return (
       <div className="errorSection">
         <div className="middle-section">
-          <TopSection sectionTitle="contact us" />
+          <TopSection sectionTitle="error" />
         </div>
         <div className="error">
           <span>

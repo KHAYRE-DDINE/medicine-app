@@ -1,8 +1,9 @@
 .main-content {
-    margin: 0 40px;
+    /* margin: 0 40px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 90px;
 }
 
 /****************************Left Side**********************************/
@@ -183,8 +184,8 @@
     position: relative;
 }
 
-.main-content .right .wrapper:nth-of-type(2) {
-    margin-top: 50px;
+.main-content .right .wrapper.top:nth-of-type(2) {
+    margin-top: 50px !important;
 }
 
 .main-content .right .wrapper:nth-of-type(2) .title h1::before {

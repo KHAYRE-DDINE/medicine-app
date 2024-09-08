@@ -76,10 +76,12 @@ function ServiceDetail() {
     return id === true ? "var(--secondary-color)" : "var(--second-main-color)";
   };
   return (
-    <div className="middle-section">
-      <TopSection sectionTitle="Service Details" />
-      <div className="background">
+    <>
+      {" "}
+      <div className="middle-section">
+        <TopSection sectionTitle="Service Details" />{" "}
       </div>
+      <div className="background">
         <div className="main-content">
           <div className="left">
             <div className="image">
@@ -185,7 +187,7 @@ function ServiceDetail() {
                 <li>Tire and Wheel Services</li>
               </div>
             </div>
-            <div className="wrapper">
+            <div className="wrapper top">
               <div className="title">
                 <h1>download</h1>
               </div>
@@ -202,7 +204,8 @@ function ServiceDetail() {
             </div>
           </div>
         </div>
-    </div>
+      </div>
+    </>
   );
 }
 
