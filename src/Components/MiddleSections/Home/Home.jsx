@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Home.css";
 import Latest from "../../LatestNews/LatestNews";
@@ -7,16 +7,25 @@ import AboutInfo from "../../AboutInfo/AboutInfo";
 import Booking from "../Booking/Booking";
 import Doctors4 from "../../../images/doctor-784329_1280.png";
 import Doctors from "../../../images/doctors.png";
+import Doctors1 from "../../../images/doctors.png";
+import Doctors2 from "../../../images/doctors.png";
+import Doctors3 from "../../../images/doctors.png";
 import teleBook from "../../../images/tele-book.png";
 import check from "../../../images/check.png";
 import location from "../../../images/location.png";
 import ServicesBoxes from "../../ServicesBoxes/ServicesBoxes";
+import {
+  motion,
+  useAnimation,
+  useInView,
+} from "framer-motion/dist/framer-motion";
 
 export const TakeId = createContext(null);
 export const TakeTestimonials = createContext(null);
 export const TakeSlide = createContext(null);
 
-function Home() {
+function Home({ ref }) {
+  console.log(ref);
   const [id, setId] = useState(0);
   const [testimonials, setTestimonials] = useState([
     {
@@ -46,29 +55,46 @@ function Home() {
       button: "Contact us",
     },
     {
-      image: Doctors,
-      name: "john deo",
+      image: Doctors1,
+      name: "Michael",
       date: "17 april 2016",
-      purpose: "in this hospital there are special surgeon",
+      purpose: "Why is skin Surgeon Considered Underrated",
       button: "Contact us",
     },
     {
-      image: Doctors,
-      name: "john deo",
+      image: Doctors2,
+      name: "Peter Packer",
       date: "17 april 2016",
-      purpose: "in this hospital there are special surgeon",
+      purpose: "Can you get a diflucan prescription online?",
       button: "Contact us",
     },
     {
-      image: Doctors,
-      name: "john deo",
+      image: Doctors3,
+      name: "Kalina",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Contact us",
     },
   ]);
+
+  const isInView = useInView(ref)
+  const mainControl = useAnimation();
+
+  useEffect(() => {
+    mainControl.start("visible");
+  }, [isInView]);
+
   return (
-    <div className="home">
+    <motion.div
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate={mainControl}
+      transition={{ duration: 0.5, delay: 0.25 }}
+      className="home"
+    >
       <div className="top-section">
         <div className="information">
           <h3 className="small-title">We Provide All Health Care Solution</h3>
@@ -101,7 +127,7 @@ function Home() {
           </div>
           <div className="box">
             <span>02</span>
-            <h2>make appointment</h2>
+            <h2>Take Treatment</h2>
             <p>
               It is a long established fact that a reader will be distracted by
               the readable content of.
@@ -112,7 +138,7 @@ function Home() {
           </div>
           <div className="box">
             <span>03</span>
-            <h2>make appointment</h2>
+            <h2>Registration</h2>
             <p>
               It is a long established fact that a reader will be distracted by
               the readable content of.
@@ -151,7 +177,7 @@ function Home() {
       </div>
       <Testimonials />
       <Latest info={info} />
-    </div>
+    </motion.div>
   );
 }
 

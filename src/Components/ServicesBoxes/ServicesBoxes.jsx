@@ -21,7 +21,7 @@ function ServicesBoxes() {
         <div className="icon">
           <i className="bi bi-truck"></i>
         </div>
-        <h2 className="ps-4 pe-4 fw-bold">Diagnostics</h2>
+        <h2 className="ps-4 pe-4 fw-bold">Treatment</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
           Phasellus venenatis porta rhoncus. Integer et viverra felis.
         </p>
@@ -33,7 +33,7 @@ function ServicesBoxes() {
         <div className="icon">
           <i className="bi bi-truck"></i>
         </div>
-        <h2 className="ps-4 pe-4 fw-bold">Diagnostics</h2>
+        <h2 className="ps-4 pe-4 fw-bold">Surgery</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
           Phasellus venenatis porta rhoncus. Integer et viverra felis.
         </p>
@@ -45,7 +45,7 @@ function ServicesBoxes() {
         <div className="icon">
           <i className="bi bi-truck"></i>
         </div>
-        <h2 className="ps-4 pe-4 fw-bold">Diagnostics</h2>
+        <h2 className="ps-4 pe-4 fw-bold">Vaccine</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
           Phasellus venenatis porta rhoncus. Integer et viverra felis.
         </p>
@@ -57,7 +57,7 @@ function ServicesBoxes() {
         <div className="icon">
           <i className="bi bi-truck"></i>
         </div>
-        <h2 className="ps-4 pe-4 fw-bold">Diagnostics</h2>
+        <h2 className="ps-4 pe-4 fw-bold">Emergency</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
           Phasellus venenatis porta rhoncus. Integer et viverra felis.
         </p>
@@ -69,7 +69,7 @@ function ServicesBoxes() {
         <div className="icon">
           <i className="bi bi-truck"></i>
         </div>
-        <h2 className="ps-4 pe-4 fw-bold">Diagnostics</h2>
+        <h2 className="ps-4 pe-4 fw-bold">Qualified Doctors</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
           Phasellus venenatis porta rhoncus. Integer et viverra felis.
         </p>

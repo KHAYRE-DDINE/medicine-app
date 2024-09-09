@@ -37,19 +37,19 @@ function AboutInfo() {
               <div className="icon">
                 <i className="bi bi-truck"></i>
               </div>
-              <span className="name">Emergency Help</span>
+              <span className="name">Qualified Doctors</span>
             </div>
             <div className="service">
               <div className="icon">
                 <i className="bi bi-truck"></i>
               </div>
-              <span className="name">Emergency Help</span>
+              <span className="name">Best Professionals</span>
             </div>
             <div className="service">
               <div className="icon">
                 <i className="bi bi-truck"></i>
               </div>
-              <span className="name">Emergency Help</span>
+              <span className="name">Medical Treatment</span>
             </div>
           </div>
           <button className="read-more">read more </button>
