@@ -1,10 +1,16 @@
 import React from "react";
 import "./ServicesBoxes.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function ServicesBoxes() {
+  const location = useLocation();
   return (
-    <div className="services-boxes row  justify-content-center ">
+    <motion.div
+      drag={location.pathname === "/" ? "x" : false}
+      dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
+      className="services-boxes row  justify-content-center "
+    >
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
         <div className="icon">
           <i className="bi bi-truck"></i>
@@ -77,7 +83,7 @@ function ServicesBoxes() {
           View more
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

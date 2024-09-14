@@ -4,6 +4,7 @@ import "./Navbar.css";
 import logo from "../../images/nav-bar-logo.png";
 import Icons from "../socialMedia/socialMediaLinks";
 import { IoSearchOutline } from "react-icons/io5";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 function NavBar() {
   let burger = document.querySelector(".burger");
@@ -48,8 +49,14 @@ function NavBar() {
   };
   showHideNavbar();
 
+  // const { scrollY } = useScroll();
+
+  // useMotionValueEvent(scrollY, "change", (latest) => {
+  //   console.log("Page scroll: ", latest);
+  // });
+
   return (
-    <div className="navbar-header">
+    <motion.div className="navbar-header">
       <div className="navbar-logo">
         <NavLink to="/">
           <img src={logo} alt="NavBar Logo" />
@@ -164,7 +171,7 @@ function NavBar() {
           </form>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
 export default NavBar;
