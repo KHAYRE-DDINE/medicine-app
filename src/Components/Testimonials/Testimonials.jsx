@@ -27,7 +27,7 @@ function Testimonials() {
     console.log(id);
   };
   return (
-    <div className="testimonial">
+    <div className="testimonial" >
       <h3 className="small-title">testimonial</h3>
       <h1 className="big-title">See What Are The Patients Saying About us</h1>
       <div className="members">

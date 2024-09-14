@@ -5,7 +5,7 @@ import "./Booking.css";
 class Booking extends Component {
   render() {
     return (
-      <div className="booking">
+      <div className="booking-left">
         <div className="middle-section">
           <TopSection sectionTitle="Booking" />
         </div>

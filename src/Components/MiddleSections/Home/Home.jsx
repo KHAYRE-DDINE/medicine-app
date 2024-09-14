@@ -1,4 +1,4 @@
-import React, { useState, createContext, useEffect } from "react";
+import React, { useState, createContext, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Home.css";
 import Latest from "../../LatestNews/LatestNews";
@@ -14,18 +14,14 @@ import teleBook from "../../../images/tele-book.png";
 import check from "../../../images/check.png";
 import location from "../../../images/location.png";
 import ServicesBoxes from "../../ServicesBoxes/ServicesBoxes";
-import {
-  motion,
-  useAnimation,
-  useInView,
-} from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 export const TakeId = createContext(null);
 export const TakeTestimonials = createContext(null);
 export const TakeSlide = createContext(null);
 
-function Home({ ref }) {
-  console.log(ref);
+function Home() {
+  const refSection = useRef(null);
   const [id, setId] = useState(0);
   const [testimonials, setTestimonials] = useState([
     {
@@ -77,25 +73,18 @@ function Home({ ref }) {
     },
   ]);
 
-  const isInView = useInView(ref)
-  const mainControl = useAnimation();
-
-  useEffect(() => {
-    mainControl.start("visible");
-  }, [isInView]);
-
   return (
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, y: 75 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      initial="hidden"
-      animate={mainControl}
-      transition={{ duration: 0.5, delay: 0.25 }}
-      className="home"
-    >
-      <div className="top-section">
+    <div className="home">
+      <motion.div
+        className="top-section"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.5, delay: 0.25 }}
+      >
         <div className="information">
           <h3 className="small-title">We Provide All Health Care Solution</h3>
           <h1 className="big-title">
@@ -108,9 +97,9 @@ function Home({ ref }) {
         <div className="image">
           <img src={Doctors4} alt="Doctor" />
         </div>
-      </div>
+      </motion.div>
       <AboutInfo />
-      <div className="working-process">
+      <motion.div className="working-process">
         <h3 className="small-title">working process</h3>
         <h1 className="big-title">how we work ?</h1>
         <div className="boxes">
@@ -148,16 +137,16 @@ function Home({ ref }) {
             </NavLink>
           </div>
         </div>
-      </div>
-      <div className="booking">
+      </motion.div>
+      <motion.div className="booking">
         <Booking />
         <div className="image">
           <img src={check} alt="Check" />
           <img src={location} alt="Location" />
           <img src={teleBook} alt="Booking Image" />
         </div>
-      </div>
-      <div className="services row justify-content-between align-items-center m-0">
+      </motion.div>
+      <motion.div className="services row justify-content-between align-items-center m-0">
         <div className="info col-lg-4">
           <h3 className="small-title">Services</h3>
           <h1 className="big-title">
@@ -174,10 +163,10 @@ function Home({ ref }) {
         <div className="boxes col-lg-7">
           <ServicesBoxes />
         </div>
-      </div>
+      </motion.div>
       <Testimonials />
       <Latest info={info} />
-    </motion.div>
+    </div>
   );
 }
 
