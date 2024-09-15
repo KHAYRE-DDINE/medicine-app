@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./ServicesBoxes.css";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function ServicesBoxes() {
   const location = useLocation();
+  const [width, setWidth] = useState(0);
+  const refBox = useRef();
+
+  useEffect(() => {
+    console.log(refBox.current.scrollWidth, refBox.current.offsetWidth);
+    setWidth(refBox.current.scrollWidth);
+  });
+
   return (
     <motion.div
       drag={location.pathname === "/" ? "x" : false}
-      dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
+      dragConstraints={{ right: 0, left: -width - 50 }}
+      ref={refBox}
       className="services-boxes row  justify-content-center "
     >
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
