@@ -1,8 +1,8 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "./Blog.css";
 import TopSection from "../../TopSection/TopSection";
 import LatestNews from "../../LatestNews/LatestNews";
-import Doctors from "../../../images/doctors.png";
+import Doctors from "../../../images/doctors.jpg";
 
 function Blog() {
   const [info, setInfo] = useState([

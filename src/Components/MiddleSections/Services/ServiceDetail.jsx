@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import TopSection from "../../TopSection/TopSection";
 import "./ServiceDetail.css";
-import doctor from "../../../images/doctors.png";
+import doctor from "../../../images/doctors.jpg";
 
 function ServiceDetail() {
   const [faqs, setFaqs] = useState([

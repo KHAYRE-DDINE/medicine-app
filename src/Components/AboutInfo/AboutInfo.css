@@ -112,7 +112,7 @@
 
 .about-info .info-side .services {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 40%));
+    grid-template-columns: repeat(auto-fill, minmax(45%, 40%));
     gap: 30px;
     margin: 30px 0;
 }
@@ -156,24 +156,40 @@
     background-color: #b2f0fb61;
 }
 
+.about-info .info-side .services .service:first-of-type .icon svg {
+    color: #00ab9a;
+}
+
 .about-info .info-side .services .service:nth-of-type(2) .icon {
     background-color: #ffbdbc69;
+}
+
+.about-info .info-side .services .service:nth-of-type(2) .icon svg {
+    color: #ff00f5;
 }
 
 .about-info .info-side .services .service:nth-of-type(3) .icon {
     background-color: #a4fcc482;
 }
 
+.about-info .info-side .services .service:nth-of-type(3) .icon svg {
+    color: #00ceff;
+}
+
 .about-info .info-side .services .service:last-of-type .icon {
     background-color: #e2c4ff9c;
 }
 
-.about-info .info-side .services .service .icon i {
-    font-size: 39px;
+.about-info .info-side .services .service:last-of-type .icon svg {
+    color: #8000809e;
+}
+
+.about-info .info-side .services .service .icon svg {
+    font-size: 30px;
     position: relative;
 }
 
-.about-info .info-side .services .service:hover .icon i {
+.about-info .info-side .services .service:hover .icon svg {
     animation: quack .3s ease-in-out;
 }
 

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./LatestNews.css";
 import { Link } from "react-router-dom";
-import Doctors from "../../images/doctors.png";
-import Doctors2 from "../../images/doctors2.png";
+
 
 function LatestNews({ info }) {
   return (

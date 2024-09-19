@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import TopSection from "../../TopSection/TopSection";
-import doctor from "../../../images/doctors.png";
+import doctor from "../../../images/doctors.jpg";
 import doctors2 from "../../../images/doctors2.png";
 import doctors3 from "../../../images/doctors3.png";
-import doctors4 from "../../../images/doctors3.png";
-import doctors5 from "../../../images/doctors3.png";
-import doctors6 from "../../../images/doctors3.png";
-import doctors7 from "../../../images/doctors3.png";
-import doctors8 from "../../../images/doctors3.png";
-import doctors9 from "../../../images/doctors3.png";
-import doctors10 from "../../../images/doctors3.png";
-import doctors11 from "../../../images/doctors4.png";
+import doctors4 from "../../../images/doctors4.png";
+import doctors5 from "../../../images/doctors.jpg";
+import doctors6 from "../../../images/doctors6.jpg";
+import doctors7 from "../../../images/doctors7.jpg";
+import doctors8 from "../../../images/doctors8.jpg";
+import doctors9 from "../../../images/doctors9.jpg";
+import doctors10 from "../../../images/doctors10.jpg";
+import doctors11 from "../../../images/doctors11.jpg";
 import "./BlogDetail.css";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineDateRange } from "react-icons/md";
@@ -67,8 +67,8 @@ function BlogDetail() {
               </p>
             </div>
             <div className="images">
-              <img src={doctor} alt="doctor" />
-              <img src={doctor} alt="doctor" />
+              <img src={doctors5} alt="doctor" />
+              <img src={doctors7} alt="doctor" />
             </div>
             <div className="paragraphs">
               <p>
@@ -151,10 +151,10 @@ function BlogDetail() {
                 <h1>Our Gallery</h1>
               </div>
               <div className="images">
-                <img src={doctors2} alt="doctors2" />
-                <img src={doctors3} alt="doctors3" />
-                <img src={doctors4} alt="doctors4" />
-                <img src={doctor} alt="doctor" />
+                <img src={doctors4} alt="doctors2" />
+                <img src={doctors11} alt="doctors3" />
+                <img src={doctors10} alt="doctors4" />
+                <img src={doctors9} alt="doctor" />
               </div>
             </div>
           </div>

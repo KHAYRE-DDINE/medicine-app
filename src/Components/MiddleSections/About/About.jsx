@@ -9,7 +9,7 @@ import Testimonials from "../../Testimonials/Testimonials";
 import circularShape from "../../../images/circular shape.png";
 import linesShape from "../../../images/lines shape.png";
 import plusShape from "../../../images/plus shape.png";
-import Doctors from "../../../images/doctors.png";
+import Doctors from "../../../images/doctors.jpg";
 
 function About() {
   const [info, setInfo] = useState([

@@ -5,11 +5,15 @@ import Latest from "../../LatestNews/LatestNews";
 import Testimonials from "../../Testimonials/Testimonials";
 import AboutInfo from "../../AboutInfo/AboutInfo";
 import Booking from "../Booking/Booking";
-import Doctors4 from "../../../images/doctor-784329_1280.png";
-import Doctors from "../../../images/doctors.png";
-import Doctors1 from "../../../images/doctors.png";
-import Doctors2 from "../../../images/doctors.png";
-import Doctors3 from "../../../images/doctors.png";
+import doctors1 from "../../../images/doctor-784329_1280.png";
+import doctors7 from "../../../images/doctors7.jpg";
+import doctors6 from "../../../images/doctors6.jpg";
+import doctors4 from "../../../images/doctors4.png";
+import doctors from "../../../images/doctors8.jpg";
+import doctors9 from "../../../images/doctors9.jpg";
+import doctors10 from "../../../images/doctors10.jpg";
+import doctors11 from "../../../images/doctors11.jpg";
+import without from "../../../images/without.png";
 import teleBook from "../../../images/tele-book.png";
 import check from "../../../images/check.png";
 import location from "../../../images/location.png";
@@ -44,28 +48,28 @@ function Home() {
   };
   const [info, setInfo] = useState([
     {
-      image: Doctors,
+      image: doctors,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Contact us",
     },
     {
-      image: Doctors1,
+      image: doctors10,
       name: "Michael",
       date: "17 april 2016",
       purpose: "Why is skin Surgeon Considered Underrated",
       button: "Contact us",
     },
     {
-      image: Doctors2,
+      image: doctors6,
       name: "Peter Packer",
       date: "17 april 2016",
       purpose: "Can you get a diflucan prescription online?",
       button: "Contact us",
     },
     {
-      image: Doctors3,
+      image: doctors7,
       name: "Kalina",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
@@ -77,12 +81,7 @@ function Home() {
     <div className="home">
       <motion.div
         className="top-section"
-        // variants={{
-        //   hidden: { opacity: 0, y: 75 },
-        //   visible: { opacity: 1, y: 0 },
-        // }}
         initial="hidden"
-        // animate={{ opacity: 1, y: 0 }}
         whileInView="visible"
         transition={{ duration: 0.5, delay: 0.25 }}
       >
@@ -95,8 +94,10 @@ function Home() {
             <Link to="/About">read more</Link>
           </button>
         </div>
-        <div className="image">
-          <img src={Doctors4} alt="Doctor" />
+        <div className="back">
+          <div className="image">
+            <img src={without} alt="Doctor" />
+          </div>
         </div>
       </motion.div>
       <AboutInfo />

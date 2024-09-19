@@ -2,6 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ServicesBoxes.css";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import { MdMedicalServices } from "react-icons/md";
+import { FaClinicMedical } from "react-icons/fa";
+import { FaPumpMedical } from "react-icons/fa";
+import { FaTruckMedical } from "react-icons/fa6";
+import { IoMdMedical } from "react-icons/io";
+import { GiMedicalDrip } from "react-icons/gi";
 
 function ServicesBoxes() {
   const location = useLocation();
@@ -9,7 +15,6 @@ function ServicesBoxes() {
   const refBox = useRef();
 
   useEffect(() => {
-    console.log(refBox.current.scrollWidth, refBox.current.offsetWidth);
     setWidth(refBox.current.scrollWidth);
   });
 
@@ -22,7 +27,7 @@ function ServicesBoxes() {
     >
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
         <div className="icon">
-          <i className="bi bi-truck"></i>
+          <FaTruckMedical />
         </div>
         <h2 className="ps-4 pe-4 fw-bold">Diagnostics</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
@@ -34,7 +39,7 @@ function ServicesBoxes() {
       </div>
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
         <div className="icon">
-          <i className="bi bi-truck"></i>
+          <FaPumpMedical />
         </div>
         <h2 className="ps-4 pe-4 fw-bold">Treatment</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
@@ -46,7 +51,7 @@ function ServicesBoxes() {
       </div>
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
         <div className="icon">
-          <i className="bi bi-truck"></i>
+          <FaClinicMedical />
         </div>
         <h2 className="ps-4 pe-4 fw-bold">Surgery</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
@@ -58,7 +63,7 @@ function ServicesBoxes() {
       </div>
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
         <div className="icon">
-          <i className="bi bi-truck"></i>
+          <MdMedicalServices />
         </div>
         <h2 className="ps-4 pe-4 fw-bold">Vaccine</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
@@ -70,7 +75,7 @@ function ServicesBoxes() {
       </div>
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
         <div className="icon">
-          <i className="bi bi-truck"></i>
+          <GiMedicalDrip />
         </div>
         <h2 className="ps-4 pe-4 fw-bold">Emergency</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">
@@ -82,7 +87,7 @@ function ServicesBoxes() {
       </div>
       <div className="service pb-5 col-10 col-md-4 col-lg-4">
         <div className="icon">
-          <i className="bi bi-truck"></i>
+          <IoMdMedical />
         </div>
         <h2 className="ps-4 pe-4 fw-bold">Qualified Doctors</h2>
         <p className="ps-4 pe-5 fs-7 mt-2 mb-4 lh-lg">

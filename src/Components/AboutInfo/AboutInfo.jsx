@@ -1,8 +1,12 @@
 import React from "react";
 import "./AboutInfo.css";
-import Doctors from "../../images/doctors.png";
+import Doctors from "../../images/doctors8.jpg";
 import Doctors2 from "../../images/doctors2.png";
 import Doctors3 from "../../images/doctors3.png";
+import { FaAmbulance } from "react-icons/fa";
+import { FaHandHoldingMedical } from "react-icons/fa";
+import { FaHouseMedicalFlag } from "react-icons/fa6";
+import { GiMedicalThermometer } from "react-icons/gi";
 
 function AboutInfo() {
   return (
@@ -29,25 +33,25 @@ function AboutInfo() {
           <div className="services">
             <div className="service">
               <div className="icon">
-                <i className="bi bi-truck"></i>
+                <FaAmbulance />
               </div>
               <span className="name">Emergency Help</span>
             </div>
             <div className="service">
               <div className="icon">
-                <i className="bi bi-truck"></i>
+                <FaHouseMedicalFlag />
               </div>
               <span className="name">Qualified Doctors</span>
             </div>
             <div className="service">
               <div className="icon">
-                <i className="bi bi-truck"></i>
+                <FaHandHoldingMedical />
               </div>
               <span className="name">Best Professionals</span>
             </div>
             <div className="service">
               <div className="icon">
-                <i className="bi bi-truck"></i>
+                <GiMedicalThermometer />
               </div>
               <span className="name">Medical Treatment</span>
             </div>

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./Testimonials.css";
 import TestimonialBack from "../../images/testimonial-left-back.png";
-import Doctors from "../../images/doctors.png";
-import Doctors2 from "../../images/doctors2.png";
-import Doctors3 from "../../images/doctors3.png";
+import doctors from "../../images/doctors.jpg";
+import doctors2 from "../../images/doctors2.png";
+import doctors3 from "../../images/doctors3.png";
+import doctors5 from "../../images/doctors.jpg";
+import doctors6 from "../../images/doctors6.jpg";
+import doctors7 from "../../images/doctors7.jpg";
 
 function Testimonials() {
   const [id, setId] = useState(0);
@@ -27,7 +30,7 @@ function Testimonials() {
     console.log(id);
   };
   return (
-    <div className="testimonial" >
+    <div className="testimonial">
       <h3 className="small-title">testimonial</h3>
       <h1 className="big-title">See What Are The Patients Saying About us</h1>
       <div className="members">
@@ -35,12 +38,12 @@ function Testimonials() {
           <div className="mask">
             <img src={TestimonialBack} alt="TestimonialBack" />
             <div className="images">
-              <img src={Doctors} alt="Doctor" />
-              <img src={Doctors2} alt="Doctor" />
-              <img src={Doctors3} alt="Doctor" />
-              <img src={Doctors} alt="Doctor" />
-              <img src={Doctors2} alt="Doctor" />
-              <img src={Doctors} alt="Doctor" />
+              <img src={doctors} alt="Doctor" />
+              <img src={doctors2} alt="Doctor" />
+              <img src={doctors3} alt="Doctor" />
+              <img src={doctors5} alt="Doctor" />
+              <img src={doctors6} alt="Doctor" />
+              <img src={doctors7} alt="Doctor" />
             </div>
           </div>
         </div>

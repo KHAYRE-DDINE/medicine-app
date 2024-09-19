@@ -6,12 +6,12 @@ import LatestNews from "../../LatestNews/LatestNews";
 import DoctorsComponent from "../../DoctorsComponent/DoctorsComponent";
 import Statistics from "../../Statistics/Statistics";
 import ServicesBoxes from "../../ServicesBoxes/ServicesBoxes";
-import Doctors from "../../../images/doctors.png";
-import Doctors1 from "../../../images/doctors.png";
-import Doctors2 from "../../../images/doctors.png";
-import Doctors3 from "../../../images/doctors.png";
-import Doctors4 from "../../../images/doctors.png";
-import Doctors5 from "../../../images/doctors.png";
+import Doctors from "../../../images/doctors.jpg";
+import Doctors1 from "../../../images/doctors.jpg";
+import Doctors2 from "../../../images/doctors.jpg";
+import Doctors3 from "../../../images/doctors.jpg";
+import Doctors4 from "../../../images/doctors.jpg";
+import Doctors5 from "../../../images/doctors.jpg";
 
 function Service() {
   const [info, setInfo] = useState([
