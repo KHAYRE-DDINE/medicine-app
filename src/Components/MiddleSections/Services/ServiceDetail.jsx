@@ -2,12 +2,13 @@ import React, { Component, useState } from "react";
 import TopSection from "../../TopSection/TopSection";
 import "./ServiceDetail.css";
 import doctor from "../../../images/doctors.jpg";
+import { FaCheck } from "react-icons/fa6";
 
 function ServiceDetail() {
   const [faqs, setFaqs] = useState([
     {
       id: 0,
-      question: "how doctor can ease you pain",
+      question: "How Doctor Can Ease Your Pain?",
       answer: `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -15,7 +16,7 @@ function ServiceDetail() {
     },
     {
       id: 1,
-      question: "how doctor can ease you pain",
+      question: "How do I withdraw from a subject?",
       answer: `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -23,7 +24,7 @@ function ServiceDetail() {
     },
     {
       id: 2,
-      question: "how doctor can ease you pain",
+      question: "Understand Doctor Before You Regret?",
       answer: `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -31,7 +32,7 @@ function ServiceDetail() {
     },
     {
       id: 4,
-      question: "how doctor can ease you pain",
+      question: "What types of systems do you support?",
       answer: `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -39,7 +40,7 @@ function ServiceDetail() {
     },
     {
       id: 5,
-      question: "how doctor can ease you pain",
+      question: "We Teach You How To Feel Better?",
       answer: `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -47,7 +48,7 @@ function ServiceDetail() {
     },
     {
       id: 3,
-      question: "how doctor can ease you pain",
+      question: "How Can I Contact You?",
       answer: `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -101,23 +102,23 @@ function ServiceDetail() {
             <div className="percentage">
               <div className="texts">
                 <p>
-                  {/* <FontAwesomeIcon icon={faCheck} /> */}
+                  <FaCheck />
                   Then along come two they
                 </p>
                 <p>
-                  {/* <FontAwesomeIcon icon={faCheck} /> */}
+                  <FaCheck />
                   That’s just a little bit more than
                 </p>
                 <p>
-                  {/* <FontAwesomeIcon icon={faCheck} /> */}
+                  <FaCheck />
                   Standard dummy text ever since
                 </p>
                 <p>
-                  {/* <FontAwesomeIcon icon={faCheck} /> */}
+                  <FaCheck />
                   Simply dummy text of the printing
                 </p>
                 <p>
-                  {/* <FontAwesomeIcon icon={faCheck} /> */}
+                  <FaCheck />
                   Make a type specimen book
                 </p>
               </div>

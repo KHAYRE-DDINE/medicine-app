@@ -25,7 +25,11 @@ function ServicesBoxes() {
       ref={refBox}
       className="services-boxes row  justify-content-center "
     >
-      <div className="service pb-5 col-10 col-md-4 col-lg-4">
+      <div
+        className={`service pb-5 col-10 col-md-4 col-lg-4 ${
+          location.pathname === "/" ? "yeah" : ""
+        }`}
+      >
         <div className="icon">
           <FaTruckMedical />
         </div>
@@ -37,7 +41,11 @@ function ServicesBoxes() {
           View more
         </Link>
       </div>
-      <div className="service pb-5 col-10 col-md-4 col-lg-4">
+      <div
+        className={`service pb-5 col-10 col-md-4 col-lg-4 ${
+          location.pathname === "/" ? "yeah" : ""
+        }`}
+      >
         <div className="icon">
           <FaPumpMedical />
         </div>
@@ -49,7 +57,11 @@ function ServicesBoxes() {
           View more
         </Link>
       </div>
-      <div className="service pb-5 col-10 col-md-4 col-lg-4">
+      <div
+        className={`service pb-5 col-10 col-md-4 col-lg-4 ${
+          location.pathname === "/" ? "yeah" : ""
+        }`}
+      >
         <div className="icon">
           <FaClinicMedical />
         </div>
@@ -61,7 +73,11 @@ function ServicesBoxes() {
           View more
         </Link>
       </div>
-      <div className="service pb-5 col-10 col-md-4 col-lg-4">
+      <div
+        className={`service pb-5 col-10 col-md-4 col-lg-4 ${
+          location.pathname === "/" ? "yeah" : ""
+        }`}
+      >
         <div className="icon">
           <MdMedicalServices />
         </div>
@@ -73,7 +89,11 @@ function ServicesBoxes() {
           View more
         </Link>
       </div>
-      <div className="service pb-5 col-10 col-md-4 col-lg-4">
+      <div
+        className={`service pb-5 col-10 col-md-4 col-lg-4 ${
+          location.pathname === "/" ? "yeah" : ""
+        }`}
+      >
         <div className="icon">
           <GiMedicalDrip />
         </div>
@@ -85,7 +105,11 @@ function ServicesBoxes() {
           View more
         </Link>
       </div>
-      <div className="service pb-5 col-10 col-md-4 col-lg-4">
+      <div
+        className={`service pb-5 col-10 col-md-4 col-lg-4 ${
+          location.pathname === "/" ? "yeah" : ""
+        }`}
+      >
         <div className="icon">
           <IoMdMedical />
         </div>

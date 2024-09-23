@@ -7,11 +7,12 @@ import DoctorsComponent from "../../DoctorsComponent/DoctorsComponent";
 import Statistics from "../../Statistics/Statistics";
 import ServicesBoxes from "../../ServicesBoxes/ServicesBoxes";
 import Doctors from "../../../images/doctors.jpg";
-import Doctors1 from "../../../images/doctors.jpg";
-import Doctors2 from "../../../images/doctors.jpg";
-import Doctors3 from "../../../images/doctors.jpg";
-import Doctors4 from "../../../images/doctors.jpg";
-import Doctors5 from "../../../images/doctors.jpg";
+import doctors6 from "../../../images/doctors6.jpg";
+import doctors3 from "../../../images/doctors3.png";
+import doctors from "../../../images/doctors8.jpg";
+import doctors9 from "../../../images/doctors9.jpg";
+import doctors11 from "../../../images/doctors11.jpg";
+import doctors10 from "../../../images/doctors10.jpg";
 
 function Service() {
   const [info, setInfo] = useState([
@@ -23,42 +24,42 @@ function Service() {
       button: "Read more",
     },
     {
-      image: Doctors,
+      image: doctors3,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Read more",
     },
     {
-      image: Doctors,
+      image: doctors6,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Read more",
     },
     {
-      image: Doctors,
+      image: doctors9,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Read more",
     },
     {
-      image: Doctors,
+      image: doctors11,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Read more",
     },
     {
-      image: Doctors,
+      image: doctors,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Read more",
     },
     {
-      image: Doctors,
+      image: doctors10,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",

@@ -39,6 +39,7 @@
     height: 65px;
     border-radius: 50%;
     position: absolute;
+    object-fit: cover;
 }
 
 .testimonial .members .images img:first-of-type {

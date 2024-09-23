@@ -9,40 +9,44 @@ import Testimonials from "../../Testimonials/Testimonials";
 import circularShape from "../../../images/circular shape.png";
 import linesShape from "../../../images/lines shape.png";
 import plusShape from "../../../images/plus shape.png";
-import Doctors from "../../../images/doctors.jpg";
+import doctors6 from "../../../images/doctors6.jpg";
+import doctors3 from "../../../images/doctors3.png";
+import doctors from "../../../images/doctors8.jpg";
+import doctors9 from "../../../images/doctors9.jpg";
+import doctors11 from "../../../images/doctors11.jpg";
 
 function About() {
   const [info, setInfo] = useState([
     {
-      image: Doctors,
+      image: doctors,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Contact us",
     },
     {
-      image: Doctors,
+      image: doctors3,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Contact us",
     },
     {
-      image: Doctors,
+      image: doctors6,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Contact us",
     },
     {
-      image: Doctors,
+      image: doctors9,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",
       button: "Contact us",
     },
     {
-      image: Doctors,
+      image: doctors11,
       name: "john deo",
       date: "17 april 2016",
       purpose: "in this hospital there are special surgeon",

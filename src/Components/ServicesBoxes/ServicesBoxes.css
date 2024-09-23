@@ -93,4 +93,8 @@
     .services-boxes .service {
         width: 90.333333%;
     }
+
+    .services-boxes .service.yeah {
+        width: 67.333333%;
+    }
 }

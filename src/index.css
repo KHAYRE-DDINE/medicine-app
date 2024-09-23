@@ -50,6 +50,17 @@ body {
     padding: 0px 52px 40px;
 }
 
+@media (min-width: 768px) and (max-width: 1240px) {
+    .background {
+        padding: 0px 15px 40px;
+    }
+
+    .about-info {
+        justify-content: space-between !important;
+        gap: 69px !important;
+    }
+}
+
 img.circle,
 img.plus,
 img.lines,
