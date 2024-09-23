@@ -46,3 +46,13 @@
     color: #636363;
     font-weight: 400;
 }
+
+@media (max-width:556px) {
+    .all-faqs {
+        grid-template-columns: 90%;
+    }
+
+    .all-faqs .faq .question h2 {
+        font-size: 15px;
+    }
+}

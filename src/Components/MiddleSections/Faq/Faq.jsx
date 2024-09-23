@@ -50,7 +50,7 @@ const Faq = () => {
   };
 
   const changeHeight = () => {
-    return id === true ? "257px" : "58px";
+    return id === true ? "260px" : "58px";
   };
 
   const changeBackground = () => {

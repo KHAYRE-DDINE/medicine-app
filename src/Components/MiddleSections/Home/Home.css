@@ -13,6 +13,18 @@ a {
     gap: 30px;
     background-image: url('../../../images/home-back.jpg');
     background-size: cover;
+    position: relative;
+}
+
+.home .top-section::before {
+    content: '';
+    position: absolute;
+    top: 86%;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../../../images/before.png');
 }
 
 .home .top-section .information {
@@ -120,9 +132,14 @@ a {
     }
 
     .home .top-section {
-        padding: 0 20px;
+        padding: 0 20px 40px;
         justify-content: flex-start;
         flex-direction: column;
+    }
+
+    .home .top-section::before {
+        bottom: -154px;
+        top: auto;
     }
 
     .home .top-section .information {
@@ -437,6 +454,7 @@ a {
     .booking .image img:nth-of-type(3) {
         width: 100%;
     }
+
 }
 
 /*********************Services***********************************/
@@ -481,7 +499,7 @@ a {
     flex-wrap: nowrap;
     cursor: grab;
     position: relative;
-    left: 745px;
+    left: 800px;
 }
 
 .services .boxes::before {
@@ -496,7 +514,13 @@ a {
 }
 
 @media (max-width: 680px) {
+    .services .info p {
+        width: 100%;
+        padding: 0 25px;
+    }
+
     .services .boxes {
         margin-top: 35px;
     }
+
 }

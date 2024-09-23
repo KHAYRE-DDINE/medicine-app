@@ -13,18 +13,20 @@ function NavBar() {
   const refForm = useRef();
   const refBack = useRef();
   const [click, setClick] = useState();
+
   let changePlusToMins = (e) => {
     let iconClass = "bi bi-";
-    console.log(e.target);
-    switch (e.target.children[0].className) {
+    let classNameProps = Object.values(e.target.children)[0].className;
+ 
+    switch (classNameProps) {
       case "bi bi-plus":
         iconClass += "dash";
-        e.target.children[0].className = "bi bi-dash";
+        // e.target.children[0].className = "bi bi-dash";
         e.target.classList.toggle("show");
         break;
       case "bi bi-dash":
         iconClass += "plus";
-        e.target.children[0].className = "bi bi-plus";
+        // e.target.children[0].className = "bi bi-plus";
         e.target.classList.toggle("show");
         break;
       default:
