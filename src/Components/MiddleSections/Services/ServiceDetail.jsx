@@ -82,126 +82,124 @@ function ServiceDetail() {
       <div className="middle-section">
         <TopSection sectionTitle="Service Details" />{" "}
       </div>
-      <div className="background">
-        <div className="main-content">
-          <div className="left">
-            <div className="image">
-              <img src={doctor} alt={doctor} />
-            </div>
-            <div className="title">
-              <h1>Why Medical Had Been So Popular Till</h1>
-            </div>
-            <div className="paragraph">
+      <div className="main-content">
+        <div className="left">
+          <div className="image">
+            <img src={doctor} alt={doctor} />
+          </div>
+          <div className="title">
+            <h1>Why Medical Had Been So Popular Till</h1>
+          </div>
+          <div className="paragraph">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+          </div>
+          <div className="percentage">
+            <div className="texts">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book
+                <FaCheck />
+                Then along come two they
+              </p>
+              <p>
+                <FaCheck />
+                That’s just a little bit more than
+              </p>
+              <p>
+                <FaCheck />
+                Standard dummy text ever since
+              </p>
+              <p>
+                <FaCheck />
+                Simply dummy text of the printing
+              </p>
+              <p>
+                <FaCheck />
+                Make a type specimen book
               </p>
             </div>
-            <div className="percentage">
-              <div className="texts">
-                <p>
-                  <FaCheck />
-                  Then along come two they
-                </p>
-                <p>
-                  <FaCheck />
-                  That’s just a little bit more than
-                </p>
-                <p>
-                  <FaCheck />
-                  Standard dummy text ever since
-                </p>
-                <p>
-                  <FaCheck />
-                  Simply dummy text of the printing
-                </p>
-                <p>
-                  <FaCheck />
-                  Make a type specimen book
-                </p>
-              </div>
-              <div className="progress-bars">
-                <div className="prog">
-                  <h3>Advanced Technology</h3>
-                  <div className="outer" data-per="90%">
-                    <div className="inside" style={{ width: "90%" }}>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div className="prog">
-                  <h3>Certified Engineers</h3>
-                  <div className="outer" data-per="65%">
-                    <div className="inside" style={{ width: "65%" }}>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div className="prog">
-                  <h3>6 years Experience</h3>
-                  <div className="outer" data-per="50%">
-                    <div className="inside" style={{ width: "50%" }}>
-                      <span></span>
-                    </div>
+            <div className="progress-bars">
+              <div className="prog">
+                <h3>Advanced Technology</h3>
+                <div className="outer" data-per="90%">
+                  <div className="inside" style={{ width: "90%" }}>
+                    <span></span>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="questions">
-              <div className="title">
-                <h1>Popular Questions</h1>
+              <div className="prog">
+                <h3>Certified Engineers</h3>
+                <div className="outer" data-per="65%">
+                  <div className="inside" style={{ width: "65%" }}>
+                    <span></span>
+                  </div>
+                </div>
               </div>
-              <div className="paragraph">
-                <p>
-                  Standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book
-                </p>
-              </div>
-              <div className="faqs">
-                <div className="all-faqs">
-                  {faqs.map((e, idx) => (
-                    <div key={idx} className="faq">
-                      <button onClick={() => itIs(idx)} className="question">
-                        <h2>
-                          {e.question}
-                          <i className="bi bi-caret-down-fill"></i>
-                        </h2>
-                      </button>
-                      <p className="answer">{e.answer}</p>
-                    </div>
-                  ))}
+              <div className="prog">
+                <h3>6 years Experience</h3>
+                <div className="outer" data-per="50%">
+                  <div className="inside" style={{ width: "50%" }}>
+                    <span></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="right">
-            <div className="wrapper">
-              <div className="list">
-                <li>Engine Diagnostics</li>
-                <li>Lube Oil and Filters</li>
-                <li>Belts and Hoses</li>
-                <li>Air Conditioning</li>
-                <li>Brake Repair</li>
-                <li>Tire and Wheel Services</li>
+          <div className="questions">
+            <div className="title">
+              <h1>Popular Questions</h1>
+            </div>
+            <div className="paragraph">
+              <p>
+                Standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type
+                specimen book
+              </p>
+            </div>
+            <div className="faqs">
+              <div className="all-faqs">
+                {faqs.map((e, idx) => (
+                  <div key={idx} className="faq">
+                    <button onClick={() => itIs(idx)} className="question">
+                      <h2>
+                        {e.question}
+                        <i className="bi bi-caret-down-fill"></i>
+                      </h2>
+                    </button>
+                    <p className="answer">{e.answer}</p>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="wrapper top">
-              <div className="title">
-                <h1>download</h1>
-              </div>
-              <div className="list">
-                <li>
-                  <div className="icon"></div>
-                  Download our brochures
-                </li>
-                <li>
-                  <div className="icon"></div>
-                  Our company details
-                </li>
-              </div>
+          </div>
+        </div>
+        <div className="right">
+          <div className="wrapper">
+            <div className="list">
+              <li>Engine Diagnostics</li>
+              <li>Lube Oil and Filters</li>
+              <li>Belts and Hoses</li>
+              <li>Air Conditioning</li>
+              <li>Brake Repair</li>
+              <li>Tire and Wheel Services</li>
+            </div>
+          </div>
+          <div className="wrapper top">
+            <div className="title">
+              <h1>download</h1>
+            </div>
+            <div className="list">
+              <li>
+                <div className="icon"></div>
+                Download our brochures
+              </li>
+              <li>
+                <div className="icon"></div>
+                Our company details
+              </li>
             </div>
           </div>
         </div>

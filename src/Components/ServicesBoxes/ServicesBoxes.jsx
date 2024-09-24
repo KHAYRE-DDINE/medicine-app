@@ -15,15 +15,15 @@ function ServicesBoxes() {
   const refBox = useRef();
 
   useEffect(() => {
-    setWidth(refBox.current.scrollWidth);
+    setWidth(refBox.current.scrollWidth - refBox.current.offsetWidth);
   });
 
   return (
     <motion.div
       drag={location.pathname === "/" ? "x" : false}
-      dragConstraints={{ right: 0, left: -width - 50 }}
+      dragConstraints={{ right: 0, left: -width }}
       ref={refBox}
-      className="services-boxes row  justify-content-center "
+      className="services-boxes row   "
     >
       <div
         className={`service pb-5 col-10 col-md-4 col-lg-4 ${

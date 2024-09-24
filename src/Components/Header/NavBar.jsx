@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../images/nav-bar-logo.png";
 import Icons from "../socialMedia/socialMediaLinks";
 import { IoSearchOutline } from "react-icons/io5";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion } from "framer-motion";
 
 function NavBar() {
   let burger = document.querySelector(".burger");
@@ -13,26 +13,30 @@ function NavBar() {
   const refForm = useRef();
   const refBack = useRef();
   const [click, setClick] = useState();
+  const [scrollNum, setScrollNum] = useState(false);
 
   let changePlusToMins = (e) => {
     let iconClass = "bi bi-";
-    let classNameProps = Object.values(e.target.children)[0].className;
- 
-    switch (classNameProps) {
-      case "bi bi-plus":
-        iconClass += "dash";
-        // e.target.children[0].className = "bi bi-dash";
-        e.target.classList.toggle("show");
-        break;
-      case "bi bi-dash":
-        iconClass += "plus";
-        // e.target.children[0].className = "bi bi-plus";
-        e.target.classList.toggle("show");
-        break;
-      default:
-        console.log("nothing");
-        break;
-    }
+    // let classNameProps = Object.values(e.target.children)[0].className;
+
+    const takeIcon = Object.values(e.target.children).map((element) => {
+      console.log(element);
+      // switch (element) {
+      //   case "bi bi-plus":
+      //     iconClass += "dash";
+      //     element.target.children[0].className = "bi bi-dash";
+      //     element.target.classList.toggle("show");
+      //     break;
+      //   case "bi bi-dash":
+      //     iconClass += "plus";
+      //     element.target.children[0].className = "bi bi-plus";
+      //     element.target.classList.toggle("show");
+      //     break;
+      //   default:
+      //     console.log("nothing");
+      //     break;
+      // }
+    });
     return iconClass;
   };
   let showHideNavbar = () => {
@@ -51,14 +55,23 @@ function NavBar() {
   };
   showHideNavbar();
 
-  // const { scrollY } = useScroll();
-
-  // useMotionValueEvent(scrollY, "change", (latest) => {
-  //   console.log("Page scroll: ", latest);
-  // });
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 200) {
+      setScrollNum(true);
+    } else {
+      setScrollNum(false);
+    }
+  });
 
   return (
-    <motion.div className="navbar-header">
+    <motion.div
+      className={`navbar-header`}
+      style={
+        scrollNum
+          ? { backgroundColor: "#e3e3e3" }
+          : { backgroundColor: "transparent" }
+      }
+    >
       <div className="navbar-logo">
         <NavLink to="/">
           <img src={logo} alt="NavBar Logo" />

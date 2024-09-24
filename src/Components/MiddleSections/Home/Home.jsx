@@ -21,7 +21,6 @@ export const TakeTestimonials = createContext(null);
 export const TakeSlide = createContext(null);
 
 function Home() {
-  const refSection = useRef(null);
   const [id, setId] = useState(0);
   const [testimonials, setTestimonials] = useState([
     {
@@ -38,10 +37,6 @@ function Home() {
       status: "patient",
     },
   ]);
-  const slide = () => {
-    id === 0 ? setId(1) : setId(0);
-    console.log(id);
-  };
   const [info, setInfo] = useState([
     {
       image: doctors,
@@ -144,7 +139,7 @@ function Home() {
           <img src={teleBook} alt="Booking Image" />
         </div>
       </motion.div>
-      <motion.div className="services row justify-content-between align-items-center m-0">
+      <motion.div className="services row align-items-center m-0">
         <div className="info col-lg-4">
           <h3 className="small-title">Services</h3>
           <h1 className="big-title">
