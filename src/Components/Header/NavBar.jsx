@@ -17,26 +17,23 @@ function NavBar() {
 
   let changePlusToMins = (e) => {
     let iconClass = "bi bi-";
-    // let classNameProps = Object.values(e.target.children)[0].className;
 
-    const takeIcon = Object.values(e.target.children).map((element) => {
-      console.log(element);
-      // switch (element) {
-      //   case "bi bi-plus":
-      //     iconClass += "dash";
-      //     element.target.children[0].className = "bi bi-dash";
-      //     element.target.classList.toggle("show");
-      //     break;
-      //   case "bi bi-dash":
-      //     iconClass += "plus";
-      //     element.target.children[0].className = "bi bi-plus";
-      //     element.target.classList.toggle("show");
-      //     break;
-      //   default:
-      //     console.log("nothing");
-      //     break;
-      // }
-    });
+    console.log();
+    switch (Object.values(e.target.children)[0].className) {
+      case "bi bi-plus":
+        iconClass += "dash";
+        Object.values(e.target.children)[0].className = "bi bi-dash";
+        e.target.classList.toggle("show");
+        break;
+      case "bi bi-dash":
+        iconClass += "plus";
+        Object.values(e.target.children)[0].className = "bi bi-plus";
+        e.target.classList.toggle("show");
+        break;
+      default:
+        console.log("nothing");
+        break;
+    }
     return iconClass;
   };
   let showHideNavbar = () => {
