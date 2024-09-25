@@ -18,7 +18,6 @@ function NavBar() {
   let changePlusToMins = (e) => {
     let iconClass = "bi bi-";
 
-    console.log();
     switch (Object.values(e.target.children)[0].className) {
       case "bi bi-plus":
         iconClass += "dash";
