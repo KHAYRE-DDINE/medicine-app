@@ -283,7 +283,8 @@
     }
 
     .about-info .info-side .service-description {
-        margin: 24px 0;
+        margin: 24px auto;
+        text-align: center;
     }
 }
 
@@ -348,11 +349,7 @@
         font-size: 17px;
         margin-top: -37px;
     }
-
-    .about-info .info-side .services {
-        grid-template-columns: none;
-    }
-
+    
     .about-info .info-side .services .service {
         margin: 0 25px;
     }
@@ -367,5 +364,15 @@
         width: 100%;
         justify-content: center;
         margin-top: -42px;
+    }
+}
+
+@media (max-width: 562px) {
+    .about-info .info-side .services {
+        grid-template-columns: 100%;
+    }
+
+    .about-info .info-side .read-more {
+        margin: 0 25px;
     }
 }
