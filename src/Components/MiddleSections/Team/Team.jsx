@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import TopSection from "../../TopSection/TopSection";
 import Doctors from "../../../images/doctors.jpg";
-import Doctors2 from "../../../images/doctors2.png";
-import Doctors3 from "../../../images/doctors3.png";
+import Doctors2 from "../../../images/doctors2.jpg";
+import Doctors3 from "../../../images/doctors3.jpg";
 import Icons from "../../socialMedia/socialMediaLinks";
 import "../About/About.css";
 import "./Team.css";

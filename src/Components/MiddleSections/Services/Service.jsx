@@ -8,7 +8,7 @@ import Statistics from "../../Statistics/Statistics";
 import ServicesBoxes from "../../ServicesBoxes/ServicesBoxes";
 import Doctors from "../../../images/doctors.jpg";
 import doctors6 from "../../../images/doctors6.jpg";
-import doctors3 from "../../../images/doctors3.png";
+import doctors3 from "../../../images/doctors3.jpg";
 import doctors from "../../../images/doctors8.jpg";
 import doctors9 from "../../../images/doctors9.jpg";
 import doctors11 from "../../../images/doctors11.jpg";

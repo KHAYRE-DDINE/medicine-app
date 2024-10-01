@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../images/nav-bar-logo.png";
+import logo from "../../images/nav-bar-logo.jpg";
 import Icons from "../socialMedia/socialMediaLinks";
 import { IoSearchOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -17,7 +17,6 @@ function NavBar() {
 
   let changePlusToMins = (e) => {
     let iconClass = "bi bi-";
-
     switch (Object.values(e.target.children)[0].className) {
       case "bi bi-plus":
         iconClass += "dash";

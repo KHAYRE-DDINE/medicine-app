@@ -9,10 +9,10 @@ import doctors7 from "../../../images/doctors7.jpg";
 import doctors6 from "../../../images/doctors6.jpg";
 import doctors from "../../../images/doctors8.jpg";
 import doctors10 from "../../../images/doctors10.jpg";
-import without from "../../../images/without.png";
-import teleBook from "../../../images/tele-book.png";
-import check from "../../../images/check.png";
-import location from "../../../images/location.png";
+import without from "../../../images/without.jpg";
+import teleBook from "../../../images/tele-book.jpg";
+import check from "../../../images/check.jpg";
+import location from "../../../images/location.jpg";
 import ServicesBoxes from "../../ServicesBoxes/ServicesBoxes";
 import { motion } from "framer-motion";
 

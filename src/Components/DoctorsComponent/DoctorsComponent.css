@@ -5,7 +5,7 @@
 
 
 .small-title {
-    background-image: url('../../images/about\ background.png');
+    background-image: url('../../images/about\ background.jpg');
     background-size: contain;
     width: max-content;
     color: var(--secondary-color);
@@ -62,7 +62,7 @@
 
 
 .our-doctors .doctors .picture::before {
-    content: url('../../images/doctors\ back\ line\ 1.png');
+    content: url('../../images/doctors\ back\ line\ 1.jpg');
     position: absolute;
     left: -20px;
     top: -33px;
@@ -70,7 +70,7 @@
 }
 
 .our-doctors .doctors .picture::after {
-    content: url('../../images/doctors\ back\ line\ 2.png');
+    content: url('../../images/doctors\ back\ line\ 2.jpg');
     position: absolute;
     left: -58px;
     top: -57px;
@@ -89,8 +89,8 @@
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    mask-image: url('../../images/image-mask.png');
-    --webkit-mask-image: url('../../images/image-mask.png');
+    mask-image: url('../../images/image-mask.jpg');
+    --webkit-mask-image: url('../../images/image-mask.jpg');
     -webkit-mask-repeat: no-repeat;
 
 }

@@ -60,7 +60,7 @@
 
 .blog-details .left .quote .text::after {
     content: '';
-    background-image: url('../../../images/quotes.png');
+    background-image: url('../../../images/quotes.jpg');
     background-size: cover;
     width: 335px;
     height: 100px;
@@ -162,7 +162,7 @@
     bottom: -4px !important;
     height: 6px !important;
     width: 80px !important;
-    background: url('../../../images/download.png') !important;
+    background: url('../../../images/download.jpg') !important;
     background-color: transparent !important;
 }
 

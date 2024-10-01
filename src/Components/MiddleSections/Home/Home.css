@@ -24,7 +24,7 @@ a {
     height: 200px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('../../../images/before.png');
+    background-image: url('../../../images/before.jpg');
 }
 
 .home .top-section .information {
@@ -175,7 +175,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../../images/background.png');
+    background-image: url('../../../images/background.jpg');
     background-size: cover;
 }
 

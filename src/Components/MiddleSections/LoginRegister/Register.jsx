@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../../../images/nav-bar-logo.png";
+import Logo from "../../../images/nav-bar-logo.jpg";
 import "./LoginRegister.css";
 import { Link } from "react-router-dom";
 

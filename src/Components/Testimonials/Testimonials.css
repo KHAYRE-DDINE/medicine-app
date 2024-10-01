@@ -276,7 +276,7 @@
 }
 
 .small-title {
-    background-image: url('../../images/about\ background.png');
+    background-image: url('../../images/about\ background.jpg');
     background-size: contain;
     width: max-content;
     color: var(--secondary-color);

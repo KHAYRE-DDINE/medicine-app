@@ -2,6 +2,7 @@
     padding: 50px 0;
     gap: 30px;
     margin: 50px 0;
+    justify-content: center;
 }
 
 .services-boxes .service {
@@ -12,7 +13,7 @@
 }
 
 .services-boxes .service .icon {
-    background: url('../../images/service-box.png');
+    background: url('../../images/service-box.jpg');
     background-size: cover;
     padding: 46px 0px 17px;
 

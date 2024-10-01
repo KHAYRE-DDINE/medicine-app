@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./TopSection.css";
-import circle from "../../images/circular shape.png";
-import plus from "../../images/plus shape.png";
+import circle from "../../images/circular shape.jpg";
+import plus from "../../images/plus shape.jpg";
 
 function TopSection({ sectionTitle }) {
   return (

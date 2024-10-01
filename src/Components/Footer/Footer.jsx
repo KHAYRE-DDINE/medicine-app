@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link, BrowserRouter } from "react-router-dom";
 import "./Footer.css";
-import logo from "../../images/nav-bar-logo.png";
-import circularShape from "../../images/circular shape.png";
-import linesShape from "../../images/lines shape.png";
-import plusShape from "../../images/plus shape.png";
+import logo from "../../images/nav-bar-logo.jpg";
+import circularShape from "../../images/circular shape.jpg";
+import linesShape from "../../images/lines shape.jpg";
+import plusShape from "../../images/plus shape.jpg";
 import Icons from "../socialMedia/socialMediaLinks";
 
 class Footer extends Component {
