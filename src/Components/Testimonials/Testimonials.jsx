@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Testimonials.css";
 import TestimonialBack from "../../images/testimonial-left-back.jpg";
-import doctors from "../../images/doctors.jpg";
-import doctors2 from "../../images/doctors2.jpg";
-import doctors3 from "../../images/doctors3.jpg";
-import doctors5 from "../../images/doctors.jpg";
+import doctors from "../../images/doctors.png";
+import doctors2 from "../../images/doctors2.png";
+import doctors3 from "../../images/doctors3.png";
+import doctors5 from "../../images/doctors.png";
 import doctors6 from "../../images/doctors6.jpg";
 import doctors7 from "../../images/doctors7.jpg";
 

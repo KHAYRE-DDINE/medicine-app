@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import TopSection from "../../TopSection/TopSection";
 import doctor from "../../../images/doctors.jpg";
-import doctors2 from "../../../images/doctors2.jpg";
-import doctors3 from "../../../images/doctors3.jpg";
-import doctors4 from "../../../images/doctors4.jpg";
-import doctors5 from "../../../images/doctors.jpg";
+import doctors2 from "../../../images/doctors2.png";
+import doctors3 from "../../../images/doctors3.png";
+import doctors4 from "../../../images/doctors4.png";
+import doctors5 from "../../../images/doctors.png";
 import doctors6 from "../../../images/doctors6.jpg";
 import doctors7 from "../../../images/doctors7.jpg";
 import doctors8 from "../../../images/doctors8.jpg";

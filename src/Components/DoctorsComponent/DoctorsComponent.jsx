@@ -1,9 +1,9 @@
 import React from "react";
 import "./DoctorsComponent.css";
 import Icons from "../socialMedia/socialMediaLinks";
-import Doctors from "../../images/doctors.jpg";
-import Doctors2 from "../../images/doctors2.jpg";
-import Doctors3 from "../../images/doctors3.jpg";
+import Doctors from "../../images/doctors.png";
+import Doctors2 from "../../images/doctors2.png";
+import Doctors3 from "../../images/doctors3.png";
 
 export default function doctors() {
   return (

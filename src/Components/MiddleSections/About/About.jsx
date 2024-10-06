@@ -10,7 +10,7 @@ import circularShape from "../../../images/circular shape.jpg";
 import linesShape from "../../../images/lines shape.jpg";
 import plusShape from "../../../images/plus shape.jpg";
 import doctors6 from "../../../images/doctors6.jpg";
-import doctors3 from "../../../images/doctors3.jpg";
+import doctors3 from "../../../images/doctors3.png";
 import doctors from "../../../images/doctors8.jpg";
 import doctors9 from "../../../images/doctors9.jpg";
 import doctors11 from "../../../images/doctors11.jpg";

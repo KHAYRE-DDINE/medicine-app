@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutInfo.css";
 import Doctors from "../../images/doctors8.jpg";
-import Doctors2 from "../../images/doctors2.jpg";
-import Doctors3 from "../../images/doctors3.jpg";
+import Doctors2 from "../../images/doctors2.png";
+import Doctors3 from "../../images/doctors3.png";
 import { FaAmbulance } from "react-icons/fa";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { FaHouseMedicalFlag } from "react-icons/fa6";

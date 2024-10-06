@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../images/nav-bar-logo.jpg";
+import logo from "../../images/nav-bar-logo.png";
 import Icons from "../socialMedia/socialMediaLinks";
 import { IoSearchOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
