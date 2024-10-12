@@ -10,27 +10,25 @@ function NavBar() {
   let burger = document.querySelector(".burger");
   let sideNavbar = document.querySelector(".side-navbar");
   const [showSearchPopUp, setShowSearchPopUp] = useState(false);
+  const [scrollNum, setScrollNum] = useState(false);
+  const [click, setClick] = useState();
   const refForm = useRef();
   const refBack = useRef();
-  const [click, setClick] = useState();
-  const [scrollNum, setScrollNum] = useState(false);
 
   let changePlusToMins = (e) => {
+    console.log(e.target.firstElementChild.attributes);
+    let icon = e.target.firstElementChild.dataset.class;
     let iconClass = "bi bi-";
-    switch (Object.values(e.target.children)[0].className) {
-      case "bi bi-plus":
-        iconClass += "dash";
-        Object.values(e.target.children)[0].className = "bi bi-dash";
-        e.target.classList.toggle("show");
-        break;
-      case "bi bi-dash":
-        iconClass += "plus";
-        Object.values(e.target.children)[0].className = "bi bi-plus";
-        e.target.classList.toggle("show");
-        break;
-      default:
-        console.log("nothing");
-        break;
+    if (icon === "bi bi-plus") {
+      iconClass += "dash";
+      e.target.firstElementChild.className = "bi bi-dash";
+      e.target.classList.toggle("show");
+    } else if (e.target.firstElementChild.className === "bi bi-dash") {
+      iconClass += "plus";
+      e.target.firstElementChild.className = "bi bi-plus";
+      e.target.classList.toggle("show");
+    } else {
+      console.log("nothing");
     }
     return iconClass;
   };
@@ -140,7 +138,7 @@ function NavBar() {
             </li>
             <li onClick={changePlusToMins}>
               pages
-              <i className="bi bi-plus"></i>
+              <i className="bi bi-plus" data-class="bi bi-plus"></i>
               <ul className="nested-list">
                 <NavLink to="/About">about us</NavLink>
                 <NavLink to="/Team">our team</NavLink>
@@ -152,7 +150,7 @@ function NavBar() {
             </li>
             <li onClick={changePlusToMins}>
               services
-              <i className="bi bi-plus"></i>
+              <i className="bi bi-plus" data-class="bi bi-plus"></i>
               <ul className="nested-list">
                 <NavLink to="/Search">service</NavLink>
                 <NavLink to="/SearchDetail">service detail</NavLink>
@@ -160,7 +158,7 @@ function NavBar() {
             </li>
             <li onClick={changePlusToMins}>
               blog
-              <i className="bi bi-plus"></i>
+              <i className="bi bi-plus" data-class="bi bi-plus"></i>
               <ul className="nested-list">
                 <NavLink to="/Blog">blog</NavLink>
                 <NavLink to="/BlogDetail">blog details</NavLink>

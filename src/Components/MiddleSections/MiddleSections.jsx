@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import "./MiddleSections.css";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -17,13 +17,25 @@ import Blog from "./Blogs/Blog";
 import BlogDetail from "./Blogs/BlogDetail";
 
 function MiddleSections() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname === "/medicine-app") {
+      navigate("/");
+      console.log(location.pathname);
+    }
+  });
+
   return (
     <div className="all-sections">
       <Routes>
+        {/* <Redirect exact from="/medicine-app" to="/" /> */}
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Faq" element={<Faq />} />
+        npm s
         <Route path="/Booking" element={<Booking />} />
         <Route path="/LoginRegister" element={<LoginRegister />} />
         <Route
