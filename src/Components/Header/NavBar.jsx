@@ -14,23 +14,13 @@ function NavBar() {
   const [click, setClick] = useState();
   const refForm = useRef();
   const refBack = useRef();
+  const [index, setIndex] = useState(0);
+  const [status, setStatus] = useState(false);
 
-  let changePlusToMins = (e) => {
-    console.log(e.target.firstElementChild.attributes);
-    let icon = e.target.firstElementChild.dataset.class;
-    let iconClass = "bi bi-";
-    if (icon === "bi bi-plus") {
-      iconClass += "dash";
-      e.target.firstElementChild.className = "bi bi-dash";
-      e.target.classList.toggle("show");
-    } else if (e.target.firstElementChild.className === "bi bi-dash") {
-      iconClass += "plus";
-      e.target.firstElementChild.className = "bi bi-plus";
-      e.target.classList.toggle("show");
-    } else {
-      console.log("nothing");
-    }
-    return iconClass;
+  let changePlusToMins = (e, id) => {
+    e.target.classList.toggle("show");
+    setIndex(id);
+    setStatus(!status);
   };
   let showHideNavbar = () => {
     if (click) {
@@ -134,34 +124,71 @@ function NavBar() {
           </div>
           <ul className="list">
             <li>
-              <NavLink to="/">home</NavLink>
+              <NavLink to="/" onClick={() => setClick(false)}>
+                home
+              </NavLink>
             </li>
-            <li onClick={changePlusToMins}>
+            <li onClick={(e) => changePlusToMins(e, 1)}>
               pages
-              <i className="bi bi-plus" data-class="bi bi-plus"></i>
+              <i
+                className={`${
+                  index === 1 && status ? "bi bi-dash" : "bi bi-plus"
+                }`}
+                data-class="bi bi-plus"
+              ></i>
               <ul className="nested-list">
-                <NavLink to="/About">about us</NavLink>
-                <NavLink to="/Team">our team</NavLink>
-                <NavLink to="/Faq">FAQ's</NavLink>
-                <NavLink to="/Booking">booking</NavLink>
-                <NavLink to="/Error">Error 404</NavLink>
-                <NavLink to="/LoginRegister">login / register</NavLink>
+                <NavLink to="/About" onClick={() => setClick(false)}>
+                  about us
+                </NavLink>
+                <NavLink to="/Team" onClick={() => setClick(false)}>
+                  our team
+                </NavLink>
+                <NavLink to="/Faq" onClick={() => setClick(false)}>
+                  FAQ's
+                </NavLink>
+                <NavLink to="/Booking" onClick={() => setClick(false)}>
+                  booking
+                </NavLink>
+                <NavLink to="/Error" onClick={() => setClick(false)}>
+                  Error 404
+                </NavLink>
+                <NavLink to="/LoginRegister" onClick={() => setClick(false)}>
+                  login / register
+                </NavLink>
               </ul>
             </li>
-            <li onClick={changePlusToMins}>
+            <li onClick={(e) => changePlusToMins(e, 2)}>
               services
-              <i className="bi bi-plus" data-class="bi bi-plus"></i>
+              <i
+                className={`${
+                  index === 2 && status ? "bi bi-dash" : "bi bi-plus"
+                }`}
+                data-class="bi bi-plus"
+              ></i>
               <ul className="nested-list">
-                <NavLink to="/Search">service</NavLink>
-                <NavLink to="/SearchDetail">service detail</NavLink>
+                <NavLink to="/service" onClick={() => setClick(false)}>
+                  service
+                </NavLink>
+                <NavLink to="/serviceDetail" onClick={() => setClick(false)}>
+                  service detail
+                </NavLink>
               </ul>
             </li>
-            <li onClick={changePlusToMins}>
+            <li onClick={(e) => changePlusToMins(e, 3)}>
               blog
-              <i className="bi bi-plus" data-class="bi bi-plus"></i>
+              <i
+                className={`${
+                  index === 3 && status ? "bi bi-dash" : "bi bi-plus"
+                }`}
+                data-class="bi bi-plus"
+              ></i>
               <ul className="nested-list">
-                <NavLink to="/Blog">blog</NavLink>
-                <NavLink to="/BlogDetail">blog details</NavLink>
+                <NavLink to="/Blog" onClick={() => setClick(false)}>
+                  blog
+                </NavLink>
+                <NavLink to="/BlogDetail" onClick={() => setClick(false)}>
+                  blog details
+                </NavLink>
               </ul>
             </li>
           </ul>

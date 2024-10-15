@@ -23,7 +23,6 @@ function MiddleSections() {
   useEffect(() => {
     if (location.pathname === "/medicine-app") {
       navigate("/");
-      console.log(location.pathname);
     }
   });
 

@@ -215,6 +215,7 @@
 @media(max-width: 768px) {
     .main-content {
         flex-direction: column;
+        padding: 0 10px;
     }
 
     .main-content .left {

@@ -55,12 +55,13 @@
 .blog-details .left .quote .text {
     display: flex;
     flex-direction: row-reverse;
+
     gap: 40px;
 }
 
 .blog-details .left .quote .text::after {
     content: '';
-    background-image: url('../../../images/quotes.jpg');
+    background-image: url('../../../images/quotes.png');
     background-size: cover;
     width: 335px;
     height: 100px;
@@ -102,6 +103,18 @@
     font-family: sans-serif;
     font-size: 16px;
     color: #4b4b4b;
+}
+
+@media (max-width: 556px) {
+    .blog-details .left .quote .text {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .blog-details .left .quote .text::after {
+        width: 105px;
+        height: 100px;
+    }
 }
 
 /***************************************Right Side*******************************************/
@@ -235,4 +248,34 @@
 
 .main-content .right .wrapper .images img:hover {
     opacity: .6;
+}
+
+@media (max-width: 556px) {
+    .blog-details .left .images img {
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .main-content .right .wrapper .images img {
+        width: 73px;
+        height: 73px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:991px) {
+    .main-content {
+        padding: 90px 20px 40px;
+    }
+
+    .main-content .left {
+        width: 58%;
+    }
+
+    .blog-details .left .images img {
+        height: 220px;
+    }
+
+    .main-content .right {
+        width: 40%;
+    }
 }

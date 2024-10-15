@@ -3,7 +3,7 @@
 
 /****************************************************************/
 .small-title {
-    background-image: url('../../../images/about\ background.jpg');
+    background-image: url('../../../images/about\ background.png');
     background-size: contain;
     width: max-content;
     color: var(--secondary-color);

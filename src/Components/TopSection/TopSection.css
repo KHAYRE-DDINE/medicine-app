@@ -63,6 +63,12 @@
     right: 100px !important;
 } */
 
+@media(max-width:556px) {
+    .landing-page-contact-top .title h1 {
+        font-size: 57px;
+    }
+}
+
 @media (max-width: 992px) {
     .landing-page-contact-top::before {
         background-size: cover;
