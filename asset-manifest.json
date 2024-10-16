@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/medicine-app/static/css/main.d409f000.css",
+    "main.js": "/medicine-app/static/js/main.abdc7be1.js",
+    "static/media/doctors6.jpg": "/medicine-app/static/media/doctors6.2d5e8fe250c82f8986c6.jpg",
+    "static/media/doctors7.jpg": "/medicine-app/static/media/doctors7.8c0590411c1196f774bf.jpg",
+    "static/media/without.png": "/medicine-app/static/media/without.5e237674bb9573166fa7.png",
+    "static/media/sad emoji.gif": "/medicine-app/static/media/sad emoji.4b5472f14025469a16d7.gif",
+    "static/media/wrapper-top.jpg": "/medicine-app/static/media/wrapper-top.815eb17ad747be75950d.jpg",
+    "static/media/doctors3.png": "/medicine-app/static/media/doctors3.345d171134bfdf5c328d.png",
+    "static/media/footer-background.avif": "/medicine-app/static/media/footer-background.d025f458ac691ab6e8fa.avif",
+    "static/media/doctors4.png": "/medicine-app/static/media/doctors4.4ec946fc19d05c178e67.png",
+    "static/media/doctors.jpg": "/medicine-app/static/media/doctors.cf931ee268ba8b5e8aee.jpg",
+    "static/media/doctors8.jpg": "/medicine-app/static/media/doctors8.3c0cf838aeadf85a44dc.jpg",
+    "static/media/doctors10.jpg": "/medicine-app/static/media/doctors10.60808da76639221f8daa.jpg",
+    "static/media/doctors9.jpg": "/medicine-app/static/media/doctors9.603206d1a66267a9899c.jpg",
+    "static/media/doctors11.jpg": "/medicine-app/static/media/doctors11.69060aabaacd995b1210.jpg",
+    "static/media/doctors.png": "/medicine-app/static/media/doctors.140032fccc8865c1ae39.png",
+    "static/media/tele-book.jpg": "/medicine-app/static/media/tele-book.9b61c79586ffd0df54cc.jpg",
+    "static/media/doctors2.png": "/medicine-app/static/media/doctors2.28b715ac409409acbb81.png",
+    "static/media/home-back.jpg": "/medicine-app/static/media/home-back.c53c8971d16c9a1033ae.jpg",
+    "static/media/line bg.jpg": "/medicine-app/static/media/line bg.a8515617a8b7e49e6c8a.jpg",
+    "index.html": "/medicine-app/index.html",
+    "main.d409f000.css.map": "/medicine-app/static/css/main.d409f000.css.map",
+    "main.abdc7be1.js.map": "/medicine-app/static/js/main.abdc7be1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d409f000.css",
+    "static/js/main.abdc7be1.js"
+  ]
+}
