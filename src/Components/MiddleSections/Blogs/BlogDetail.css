@@ -124,6 +124,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    position: sticky;
+    top: 100px;
 }
 
 .blog-details .right .search-box {

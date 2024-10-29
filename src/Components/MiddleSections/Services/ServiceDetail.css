@@ -147,6 +147,8 @@
 
 .main-content .right {
     width: 32%;
+    position: sticky;
+    top: 100px;
 }
 
 .main-content .right .wrapper {
