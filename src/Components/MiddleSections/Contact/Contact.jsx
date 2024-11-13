@@ -42,7 +42,7 @@ class Contact extends Component {
               <div className="contact-me">
                 <h4>phone && email</h4>
                 <address>
-                  ahrarkhirdin@gmail.com <br /> +212 637625661
+                  ahrarkhirdin@gmail.com <br /> +542 465-66-097
                 </address>
               </div>
               <div className="contact-me">
@@ -59,7 +59,7 @@ class Contact extends Component {
                 <i className="bi bi-person-rolodex"></i>
               </div>
               <h2>contact number</h2>
-              <p>+21237625661</p>
+              <p> +542 465-66-097</p>
             </div>
             <div style={{ borderColor: "#ffbdbc" }} className="box">
               <div className="icon">

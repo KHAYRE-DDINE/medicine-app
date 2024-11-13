@@ -51,7 +51,10 @@ function NavBar() {
       className={`navbar-header`}
       style={
         scrollNum
-          ? { backgroundColor: "#e3e3e3" }
+          ? {
+              backgroundColor: "#f9f9f9eb",
+              boxShadow: "0 0 20px 0px #111111",
+            }
           : { backgroundColor: "transparent" }
       }
     >
